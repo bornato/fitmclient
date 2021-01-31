@@ -40,7 +40,7 @@ public class DiscordPresence extends Module {
     );
 
     public DiscordPresence() {
-        super(Category.Misc, "discord-presence", "Displays a RPC for you on Discord to show that you're playing Meteor Client!");
+        super(Category.Misc, "discord-presence", "Displays a RPC for you on Discord to show that you're playing FitMClient!");
     }
 
     private static final DiscordRichPresence rpc = new DiscordRichPresence();
@@ -82,10 +82,11 @@ public class DiscordPresence extends Module {
             instance.Discord_UpdatePresence(rpc);
 
             ticks = 0;
+            updateDetails();
         }
 
-        updateDetails();
         instance.Discord_RunCallbacks();
+
     }
 
     private String getLine(Setting<String> line) {
@@ -94,7 +95,7 @@ public class DiscordPresence extends Module {
     }
 
     private String getServer(){
-        if (mc.isInSingleplayer()) return "SinglePlayer";
+        if (mc.isInSingleplayer()) return "fitmc foda";
         else return Utils.getWorldName();
     }
 
@@ -103,7 +104,7 @@ public class DiscordPresence extends Module {
     }
 
     private void updateDetails() {
-        if (isActive() && Utils.canUpdate()) {
+        if (isActive() && mc.player != null && mc.world != null) {
             rpc.details = getLine(line1);
             rpc.state = getLine(line2);
             instance.Discord_UpdatePresence(rpc);

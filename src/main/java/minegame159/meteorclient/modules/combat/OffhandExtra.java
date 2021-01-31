@@ -31,6 +31,7 @@ public class OffhandExtra extends Module {
         Gap,
         EXP,
         Crystal,
+        Baiacu,
     }
     
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
@@ -211,6 +212,8 @@ public class OffhandExtra extends Module {
             item = Items.ENCHANTED_GOLDEN_APPLE;
         } else if (currentMode == Mode.Gap) {
             item = Items.GOLDEN_APPLE;
+        } else if (currentMode == Mode.Baiacu) {
+            item = Items.PUFFERFISH;
         } else if (currentMode == Mode.Crystal) {
             item = Items.END_CRYSTAL;
         } else if (currentMode == Mode.EXP) {
