@@ -19,7 +19,7 @@ Follow guide at [meteorclient.com](https://meteorclient.com/info).
 - Run `./gradlew build`
 
 ## Donation
-segue os menor la da forca pa eles fe fml
+segue os menor la da forca pa eles fe fml<br>
 literally go donate to the devs of meteor I'm just a shitposter. Original:<br>
 We would appreciate if you donated to us through [PayPal](https://paypal.me/MineGame159). Include your Discord tag so we can give you donator role and contact you. Minimum for donator role is 5$.
 
