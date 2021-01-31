@@ -1,20 +1,19 @@
 {
   "schemaVersion": 1,
-  "id": "meteor-client",
+  "id": "Fit-MClient",
   "version": "${version}",
 
-  "name": "Meteor Client",
-  "description": "Based utility mod.",
+  "name": "Fit MClient",
+  "description": "the fittest client in minecraft.",
   "authors": [
-    "MineGame159",
-    "squidoodly",
-    "seasnail"
+    "bornato",
+    "0sss"
   ],
   "contact": {
-    "homepage": "https://meteorclient.com",
-    "issues": "https://github.com/MeteorDevelopment/meteor-client/issues",
-    "sources": "https://github.com/MeteorDevelopment/meteor-client",
-    "discord": "https://meteorclient.com/discord"
+    "homepage": "anarquia.xyz",
+    "issues": "https://github.com/bornato/fitmclient/pulls",
+    "sources": "https://github.com/bornato/fitmclient",
+    "discord": "https://discord.gg/AMMzD5X4hG"
   },
 
   "license": "GPL-3.0",

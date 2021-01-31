@@ -260,7 +260,7 @@ public class AntiAFK extends Module {
             ListTag messagesTag = tag.getList("messages", 8);
             for (Tag messageTag : messagesTag) messages.add(messageTag.asString());
         } else {
-            messages.add("This is an AntiAFK message. Meteor on Crack!");
+            messages.add("This is an AntiAFK message. FitMC on CRACK!!");
         }
 
         return super.fromTag(tag);

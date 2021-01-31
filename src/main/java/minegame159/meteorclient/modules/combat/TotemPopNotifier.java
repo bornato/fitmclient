@@ -53,14 +53,14 @@ public class TotemPopNotifier extends Module {
     private final Setting<String> popMessage = sgGeneral.add(new StringSetting.Builder()
             .name("pop-message")
             .description("Chat alert to send when a player pops.")
-            .defaultValue("EZ pops. {player} just popped {pops} {totems}. Meteor on Crack!")
+            .defaultValue("EZ pops. {player} just popped {pops} {totems}. FitMClient on Crack!")
             .build()
     );
 
     private final Setting<String> deathMessage = sgGeneral.add(new StringSetting.Builder()
             .name("death-message")
             .description("Chat alert to send on a player's death.")
-            .defaultValue("EZZZ. {player} just died after popping {pops} {totems}. Meteor on Crack!")
+            .defaultValue("EZZZ. {player} just died after popping {pops} {totems}. FitMClient on Crack!")
             .build()
     );
 

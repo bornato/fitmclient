@@ -19,21 +19,21 @@ import java.util.List;
 public class SplashTextResourceSupplierMixin {
     @Inject(method = "apply", at = @At("HEAD"))
     private void onApply(List<String> list, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
-        list.add("Meteor on Crack!");
-        list.add("Star Meteor Client on GitHub!");
-        list.add("Based utility mod.");
-        list.add("based");
+        list.add("FitMC foda!");
+        list.add("the odset anarchy in miamecrat!");
+        list.add("minde papai.");
+        list.add("If you look at the top, there's a giant letter \"N\"!");
         list.add(":EZ:");
         list.add(":kekw:");
-        list.add("OK retard.");
-        list.add("cat");
-        list.add("snale");
-        list.add("monkey");
-        list.add("mingane");
-        list.add("https://bigrat.monster");
-        list.add("snale moment");
-        list.add("inertia moment");
-        list.add("squidoodly based god");
-        list.add("r/squidoodly");
+        list.add("1FitPop.");
+        list.add("vai toma no cu!");
+        list.add("sexo momento");
+        list.add("fitsex");
+        list.add("Fit on Crack!");
+        list.add("fit cumshot!");
+        list.add("Fit groaned as he woke up!");
+        list.add("fitmc apple");
+        list.add("jogador de inertia aff");
+        list.add("#1 FitFan!");
     }
 }

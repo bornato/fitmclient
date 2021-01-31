@@ -139,7 +139,7 @@ public class Spam extends Module {
             ListTag messagesTag = tag.getList("messages", 8);
             for (Tag messageTag : messagesTag) messages.add(messageTag.asString());
         } else {
-            messages.add("Meteor on Crack!");
+            messages.add("FitMClient foda!");
         }
 
         return super.fromTag(tag);

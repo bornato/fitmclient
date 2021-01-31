@@ -88,7 +88,7 @@ public class Friend extends Command {
         @Override
         public Collection<String> getExamples() {
             // :)
-            return Arrays.asList("086", "seasnail8169", "squidoodly");
+            return Arrays.asList("086", "seasnail8169", "squidoodly", "fitMC", "bornato", "FitFan", "FitMC_Foda");
         }
     }
 
