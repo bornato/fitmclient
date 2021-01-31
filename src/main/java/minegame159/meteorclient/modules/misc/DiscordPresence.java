@@ -60,6 +60,11 @@ public class DiscordPresence extends Module {
         FitPics.add("fit_mclient");
         FitPics.add("fit_mclient_1");
         FitPics.add("fit_mclient_2");
+        FitPics.add("fit_mclient_3");
+        FitPics.add("fit_mclient_4");
+        FitPics.add("fit_mclient_5");
+        FitPics.add("fit_mclient_6");
+        FitPics.add("fit_mclient_7");
         rpc.startTimestamp = System.currentTimeMillis() / 1000L;
 
         rpc.largeImageKey = "fit_mclient";
