@@ -72,7 +72,7 @@ public class MeteorClient implements ClientModInitializer {
             return;
         }
 
-        LOG.info("Initializing Meteor Client");
+        LOG.info("Initializing Fit MClient");
 
         mc = MinecraftClient.getInstance();
         Utils.mc = mc;

@@ -34,7 +34,7 @@ public class DiscordPresence extends Module {
     private final Setting<String> line2 = sgGeneral.add(new StringSetting.Builder()
             .name("line-2")
             .description("The text it displays on line 2 of the RPC.")
-            .defaultValue("Meteor on Crack!")
+            .defaultValue("FitMClient")
             .onChanged(booleanSetting -> updateDetails())
             .build()
     );
@@ -51,11 +51,11 @@ public class DiscordPresence extends Module {
     @Override
     public void onActivate() {
         DiscordEventHandlers handlers = new DiscordEventHandlers();
-        instance.Discord_Initialize("709793491911180378", handlers, true, null);
+        instance.Discord_Initialize("805232416368099419", handlers, true, null);
 
         rpc.startTimestamp = System.currentTimeMillis() / 1000L;
-        rpc.largeImageKey = "meteor_client";
-        String largeText = "Meteor Client " + Config.INSTANCE.version.getOriginalString();
+        rpc.largeImageKey = "fit_mclient";
+        String largeText = "FitMClient " + Config.INSTANCE.version.getOriginalString();
         if (!Config.INSTANCE.devBuild.isEmpty()) largeText += " Dev Build: " + Config.INSTANCE.devBuild;
         rpc.largeImageText = largeText;
         currentSmallImage = SmallImage.MineGame;
