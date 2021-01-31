@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "Fit-MClient",
+  "id": "fit-mclient",
   "version": "${version}",
 
   "name": "Fit MClient",
