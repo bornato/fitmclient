@@ -23,7 +23,7 @@ public class CrashReportMixin {
     private void onAddStackTrace(StringBuilder sb, CallbackInfo info) {
         if (ModuleManager.INSTANCE != null) {
             sb.append("\n\n");
-            sb.append("-- Meteor Client --\n");
+            sb.append("-- Fit MClient --\n");
             sb.append("Version: ").append(Config.INSTANCE.version.getOriginalString()).append("\n");
 
             if (!Config.INSTANCE.devBuild.isEmpty()) {
