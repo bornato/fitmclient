@@ -73,14 +73,14 @@ public class Utils {
         for (int i = 0; i < servers.size(); i++) {
             ServerInfo server = servers.get(i);
 
-            if (server.address.contains("pvp.meteorclient.com")) {
+            if (server.address.contains("anarquia.xyz")) {
                 contains = true;
                 break;
             }
         }
 
         if (!contains) {
-            servers.add(new ServerInfo("Meteor Pvp", "pvp.meteorclient.com", false));
+            servers.add(new ServerInfo("anarquia.xyz", "anarquia.xyz", false));
             servers.saveFile();
         }
     }
