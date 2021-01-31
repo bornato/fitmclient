@@ -31,7 +31,7 @@ public class Config extends Savable<Config> {
     public Config() {
         super(new File(MeteorClient.FOLDER, "config.nbt"));
 
-        devBuild = FabricLoader.getInstance().getModContainer("meteor-client").get().getMetadata().getCustomValue("meteor-client:devbuild").getAsString();
+        devBuild = FabricLoader.getInstance().getModContainer("fit-mclient").get().getMetadata().getCustomValue("meteor-client:devbuild").getAsString();
     }
 
     public void setPrefix(String prefix) {

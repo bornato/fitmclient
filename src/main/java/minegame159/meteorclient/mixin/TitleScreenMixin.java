@@ -44,6 +44,9 @@ public class TitleScreenMixin extends Screen {
     private int text5Length;
 
     private String text6;
+    private int text6Length;
+
+    private String text7;
 
     private int fullLength;
     private int prevWidth;
@@ -61,15 +64,17 @@ public class TitleScreenMixin extends Screen {
         text4 = "fitmc_foda";
         text5 = " & ";
         text6 = "0sss";
+        text7 = ", fork of Meteor Client";
 
         text1Length = textRenderer.getWidth(text1);
         text2Length = textRenderer.getWidth(text2);
         text3Length = textRenderer.getWidth(text3);
         text4Length = textRenderer.getWidth(text4);
         text5Length = textRenderer.getWidth(text5);
-        int text6Length = textRenderer.getWidth(text6);
+        text6Length = textRenderer.getWidth(text6);
+        int text7Length = textRenderer.getWidth(text7);
 
-        fullLength = text1Length + text2Length + text3Length + text4Length + text5Length + text6Length;
+        fullLength = text1Length + text2Length + text3Length + text4Length + text5Length + text6Length + text7Length;
         prevWidth = 0;
     }
 
@@ -100,5 +105,7 @@ public class TitleScreenMixin extends Screen {
         textRenderer.drawWithShadow(matrices, text5, width - fullLength + prevWidth - 3, 3, WHITE);
         prevWidth += text5Length;
         textRenderer.drawWithShadow(matrices, text6, width - fullLength + prevWidth - 3, 3, GRAY);
+        prevWidth += text6Length;
+        textRenderer.drawWithShadow(matrices, text7, width - fullLength + prevWidth - 3, 3, WHITE);
     }
 }
