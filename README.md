@@ -7,7 +7,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/MeteorDevelopment/meteor-client)
 ![CircleCI](https://circleci.com/gh/MeteorDevelopment/meteor-client/tree/master.svg?style=svg)
 
-this is literally [meteor client](https://github.com/MeteorDevelopment/meteor-client) fitmc version lol
+this is literally [meteor client](https://github.com/MeteorDevelopment/meteor-client) fitmc version lol<br>
 using 1.16.5
 Join our [Discord](https://discord.gg/AMMzD5X4hG).
 
