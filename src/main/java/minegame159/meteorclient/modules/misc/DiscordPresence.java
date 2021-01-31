@@ -20,6 +20,8 @@ import minegame159.meteorclient.settings.SettingGroup;
 import minegame159.meteorclient.settings.StringSetting;
 import minegame159.meteorclient.utils.Utils;
 
+import java.util.ArrayList;
+
 public class DiscordPresence extends Module {
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
@@ -47,13 +49,19 @@ public class DiscordPresence extends Module {
     private static final DiscordRPC instance = DiscordRPC.INSTANCE;
     private SmallImage currentSmallImage;
     private int ticks;
+    private ArrayList<String> FitPics = new ArrayList<String>();
+
 
     @Override
     public void onActivate() {
         DiscordEventHandlers handlers = new DiscordEventHandlers();
         instance.Discord_Initialize("805232416368099419", handlers, true, null);
 
+        FitPics.add("fit_mclient");
+        FitPics.add("fit_mclient_1");
+        FitPics.add("fit_mclient_2");
         rpc.startTimestamp = System.currentTimeMillis() / 1000L;
+
         rpc.largeImageKey = "fit_mclient";
         String largeText = "FitMClient " + Config.INSTANCE.version.getOriginalString();
         if (!Config.INSTANCE.devBuild.isEmpty()) largeText += " Dev Build: " + Config.INSTANCE.devBuild;
@@ -71,21 +79,33 @@ public class DiscordPresence extends Module {
         instance.Discord_Shutdown();
     }
 
+    int CurrentPic = 0;
     @EventHandler
     private void onTick(TickEvent.Post event) {
         if (!Utils.canUpdate()) return;
         ticks++;
 
-        if (ticks >= 200) {
+        if (ticks % 200 == 0) {
             currentSmallImage = currentSmallImage.next();
             currentSmallImage.apply();
-            instance.Discord_UpdatePresence(rpc);
 
-            ticks = 0;
+            instance.Discord_UpdatePresence(rpc);
             updateDetails();
+            instance.Discord_RunCallbacks();
+        }
+        if (ticks >= 1200) {
+            rpc.largeImageKey = FitPics.get(CurrentPic);
+            instance.Discord_UpdatePresence(rpc);
+            updateDetails();
+            instance.Discord_RunCallbacks();
+
+            CurrentPic++;
+            if (CurrentPic==FitPics.size()){
+                CurrentPic=0;
+            }
+            ticks = 0;
         }
 
-        instance.Discord_RunCallbacks();
 
     }
 
