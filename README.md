@@ -8,6 +8,7 @@
 ![CircleCI](https://circleci.com/gh/MeteorDevelopment/meteor-client/tree/master.svg?style=svg)
 
 this is literally [meteor client](https://github.com/MeteorDevelopment/meteor-client) fitmc version lol
+using 1.16.5
 Join our [Discord](https://discord.gg/AMMzD5X4hG).
 
 ## Installation
@@ -18,6 +19,7 @@ Follow guide at [meteorclient.com](https://meteorclient.com/info).
 - Run `./gradlew build`
 
 ## Donation
+literally go donate to the devs of meteor I'm just a shitposter. Original:
 We would appreciate if you donated to us through [PayPal](https://paypal.me/MineGame159). Include your Discord tag so we can give you donator role and contact you. Minimum for donator role is 5$.
 
 ## Thank you
