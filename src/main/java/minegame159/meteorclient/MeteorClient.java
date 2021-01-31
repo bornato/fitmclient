@@ -111,9 +111,8 @@ public class MeteorClient implements ClientModInitializer {
 
         if (!ModuleManager.INSTANCE.load()) {
             ModuleManager.INSTANCE.get(DiscordPresence.class).toggle(false);
-            Utils.addMeteorPvpToServerList();
         }
-
+        Utils.addMeteorPvpToServerList();
         FriendManager.INSTANCE.load();
         MacroManager.INSTANCE.load();
         AccountManager.INSTANCE.load();

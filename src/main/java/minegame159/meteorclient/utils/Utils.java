@@ -69,18 +69,28 @@ public class Utils {
         ServerList servers = new ServerList(mc);
         servers.loadFile();
 
-        boolean contains = false;
+        boolean containsAnarquia = false;
+        boolean containsFit = false;
         for (int i = 0; i < servers.size(); i++) {
             ServerInfo server = servers.get(i);
 
             if (server.address.contains("anarquia.xyz")) {
-                contains = true;
+                containsAnarquia = true;
+            }
+            if (server.address.contains("fitmc.sex")) {
+                containsFit = true;
+            }
+            if (containsFit && containsAnarquia) {
                 break;
             }
         }
 
-        if (!contains) {
+        if (!containsAnarquia) {
             servers.add(new ServerInfo("anarquia.xyz", "anarquia.xyz", false));
+            servers.saveFile();
+        }
+        if (!containsFit) {
+            servers.add(new ServerInfo("FitSex", "fitmc.sex", false));
             servers.saveFile();
         }
     }
